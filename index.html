@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>主页</title>
+	<!--fonts-->
+		<link href='http://fonts.useso.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+			<link href="css/bootstrap.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- 移动端 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="前端, html, css, javascript, jequrey,node, express" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //移动端 -->
+	<!-- js文件 -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.97074.js"></script>
+	<!-- 平滑滚动 -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- 平滑滚动 -->
+</head>
+<body>
+<!-- banner -->
+<div id="home" class="banner">
+	<div class="container">
+		<div class="banner-grids">
+			<div class="col-md-4 navigation">
+				<div class="nav-left">
+					<div class="grid__item color-4">
+						<a class="link link--kumya" href="#home"><span data-letters="喻静">喻静</span></a>
+					</div>
+				</div>
+				<div class="nav-right">
+						<span class="menu"><img src="images/menu.png" alt="" /></span>
+							<nav class="cl-effect-1">
+								<ul class="nav1">
+									<li><a class="scroll" href="#home">主页</a></li>
+									<li><a class="scroll" href="#about">关于</a></li>
+									<li><a class="scroll" href="#portfolio">作品</a></li>
+									<li><a class="scroll" href="#contact">联系我</a></li>
+								</ul>
+							</nav>
+							<!-- script for menu -->
+							<script>
+								$( "span.menu" ).click(function() {
+								$( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								});
+								});
+							</script>
+							<!-- //script for menu -->
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-8 banner-image text-center">
+				<img src="images/banner.png" alt=""/>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<div class="about-info">
+				<h3>关于我</h3>
+		</div>
+		<div class="about-grids">
+		   	<div class="col-md-8 about-grid">
+		   		<h4>自我介绍</h4>
+					<p>
+						当一个作品完整的呈现在眼前时，心中的成就感只能用万马奔腾来形容。<br>
+						当一个bug被“改邪归正”的时候，心中的幸福感也只能用美滋滋啦。<br>
+						所以我没有华丽的辞藻，但这并不影响我对前端的渴望，我对的知识的渴望。<br>
+						我是喻静，一个想要在深圳留下的23岁的执着girl，期待未来写更优秀的代码，汲取更先进的思想，学习更多新的知识。<br>
+					</p>
+		   	</div>
+		   	<div class="col-md-4 about-grid">
+		   		<h4>求职意向</h4>
+					<p>
+						前端开发岗
+					</p>
+		   	</div>
+		   	<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- my skills -->
+	<div class="our-skills">
+		<div class="container">
+			<div class="skill-info">
+				<h2>专业技能</h2>
+			</div>
+			<div class="skill-grids">
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-1" data-index="1"></div>
+						<p>HTML/CSS</p>
+						<div class="extend-html extend-html-1">
+							<ul class="extend-html-ul">
+							<li>遵循W3C标准规范，编写语义化、规范化的HTML和模块化的CSS</li></br>
+								<li>熟悉盒模型等概念，能用Flex和bootstrap构建响应式布局</li></br>
+								<li>熟悉HTML5/CSS3新特性，并在个人项目中使用新特性</li></br>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-2" data-index="2"></div>
+						<p>JavaScript</p>
+						<div class="extend-html extend-html-2">
+							<ul class="extend-html-ul">
+								<li>熟练使用原生JavaScript事件绑定、冒泡和捕获等实现网页功能，了解ES6标准的JavaScript</li></br>
+								<li> 能熟练Ajax创建XMLHttpRequest对象，通过GET和POST方法发送请求，与后台进行数据交互 </li></br>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-3" data-index="2"></div>
+						<p>Jquery</p>
+						<div class="extend-html extend-html-3">
+							<ul class="extend-html-ul">
+								<li>在熟练使用原生javascript的基础上，熟练使用 jquery实现网页功能</li></br>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-4" data-index="4"></div>
+						<p>Node</p>
+						<div class="extend-html extend-html-4">
+							<ul class="extend-html-ul">
+								<li> 熟悉node.js，并配合express搭建后端服务器，并用Ajax与其交互</li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="clearfix"> </div> -->
+				 <script type="text/javascript" src="js/circles.js"></script>
+				 <script>
+				 				var log = function() {
+									console.log.apply(console, arguments)
+								}
+								var colors = [
+										['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852'],['#ced7df', '#76b852']
+									];
+								for (var i = 1; i <= 4; i++) {
+									var child = $(`#circles-${i}`)
+									// console.log('child', child, child[0]);
+									var score = child.data('index')
+									// console.log('score', score);
+									percentage = 100 - (score * 10);
+
+									Circles.create({
+										id: child[0].id,
+										percentage: percentage,
+										radius: 80,
+										width: 8,
+										number: percentage,
+										text: '%',
+										colors: colors[i - 1],
+										duration: 500,
+									});
+								}
+								var hover = function() {
+									$('.circle').hover(function() {
+											$('.extend-html').css('display', 'inline-block')
+									})
+									// $('#circles-1').hover(function() {
+									// 		$('.extend-html-1').css('display', 'inline-block')
+									// })
+									// $('#circles-2').hover(function() {
+									// 		$('.extend-html-2').css('display', 'inline-block')
+									// })
+									// $('#circles-3').hover(function() {
+									// 		$('.extend-html-3').css('display', 'inline-block')
+									// })
+									// $('#circles-4').hover(function() {
+									// 		$('.extend-html-4').css('display', 'inline-block')
+									// })
+								}
+								hover()
+				</script>
+			</div>
+		</div>
+	</div>
+<!-- //my skills -->
+<div id="portfolio" class="gallery">
+		<div class="container">
+				<script src="js/jquery.chocolat.js"></script>
+			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+			<!--light-box-files -->
+			<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$('.gallery a').Chocolat();
+			});
+			</script>
+			<h3>作品集</h3>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="images/webplayer.gif" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/webplayer.jpg" alt="" />
+							<div>
+								<h5>网页版音乐播放器</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/todo.gif" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/todo.jpg" alt="" />
+							<div>
+								<h5>TODO</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/carousel.gif" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/lpbo.jpg" alt="" />
+							<div>
+								<h5>轮播图</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/player.gif" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img  class="img-play"src="images/player.jpg" alt="" />
+							<div>
+								<h5>移动端音乐播放器</h5>
+							</div>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="images/a5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a5.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a6.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a7.jpg" alt="" />
+							<div>``
+								<h5>VIEW</h5>
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a1.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a2.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+
+							</div>
+						</a>
+					</li> -->
+					<div class="clearfix"> </div>
+				</ul>
+			</section>
+				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+				<script type="text/javascript">
+					$(function() {
+						$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+					});
+				</script>
+        </div>
+</div>
+<!--//gallery-->
+<!--news-->
+<div class="news">
+	<div class="container">
+		<h3>联系我</h3>
+	</div>
+</div>
+<!--//news-->
+<!-- get-in -->
+<div id="contact" class="get-in-touch">
+	<div class="container">
+		<div class="get-info text-center">
+			<h4>人生需要不断的学习才能不在历史的进程中被淘汰,而我喜欢在这进程中不断上升，追寻新的自我，寻找更高的价值，看到更大的世界。</h4>
+			<h4></h4>
+		</div>
+	</div>
+</div>
+<!-- //get-in -->
+<!-- contact-us -->
+<div class="contact-us">
+	<div class="container">
+		<div class="contact-grids">
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+				<p><a href="yujingtt.outlook.com">yujingtt.outlook.com</a></p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
+				<p>18798773566</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //contact-us -->
+
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
